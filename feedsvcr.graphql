@@ -1,0 +1,20 @@
+type MyItem @key(fields : "sampleEntity { id }") {
+  sampleEnum: SampleEnumType!
+  sampleEntity: SampleEntity! @provides(fields : "id  status title")
+}
+
+enum SampleEnumType {
+  one
+  two
+}
+
+type SampleEntity @extends @key(fields : "id status") {
+  id: ID! @external
+  status: EntityStatus! @external
+  title: String! @external
+}
+
+enum EntityStatus {
+  A
+  B
+}

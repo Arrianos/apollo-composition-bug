@@ -1,0 +1,22 @@
+{
+    "subgraphs": {
+        "listingsgql": {
+            "routing_url": "https://listingsgql.vip.ebay.com/graphql",
+            "schema": {
+                "file": "/Volumes/Work/Projects/bugSample/listingsgql.graphql"
+            }
+        },
+        "feedsvcr": {
+            "routing_url": "https://feedsvcr.vip.ebay.com/social/graphql",
+            "schema": {
+                "file": "/Volumes/Work/Projects/bugSample/feedsvcr.graphql"
+            }
+        },
+        "watch": {
+            "routing_url": "https://watch.vip.ebay.com/gql/graphql",
+            "schema": {
+                "file": "/Volumes/Work/Projects/bugSample/watch.graphql"
+            }
+        }
+    }
+}

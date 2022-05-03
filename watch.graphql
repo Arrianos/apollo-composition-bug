@@ -1,0 +1,14 @@
+type MyItem @extends @key(fields : "sampleEntity { id }") {
+  isWatched: Boolean!
+  sampleEntity: SampleEntity! @external
+}
+
+enum EntityStatus {
+  A
+  B
+}
+
+type SampleEntity @extends @key(fields : "id status") {
+  id: ID! @external
+  status: EntityStatus! @external
+}

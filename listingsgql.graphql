@@ -1,0 +1,13 @@
+"Represents a listing."
+type SampleEntity @key(fields : "id status") {
+  id: ID!
+  status: EntityStatus!
+  
+  "The item title."
+  title: String!
+}
+
+enum EntityStatus {
+  A
+  B
+}
